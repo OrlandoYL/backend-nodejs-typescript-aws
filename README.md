@@ -1,6 +1,6 @@
 # Serverless - AWS Node.js Typescript DynamoDB
 
-Este proyecto se generó utilizando la plantilla `aws-nodejs-typescript` del [Serverless Framework] (https://www.serverless.com/).
+Este proyecto se generó utilizando la plantilla `aws-nodejs-typescript` del [Serverless Framework](https://www.serverless.com/).
 Se crearon 3 endpoints son los siguientes:
 + METHOD GET - **https://{URL_AWS}/dev/vehiculo/**
     > Este primer endpoint retorna una lista de vehiculos que se guardo en DynamoDB de AWS.
@@ -20,6 +20,22 @@ Se crearon 3 endpoints son los siguientes:
 
 Dependiendo de su administrador de paquetes preferido, siga las instrucciones a continuación para implementar su proyecto.
 
+### Configurar AWS CLI
+ Intalar AWS a traves de este enlace <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">Instalar AWS</a>
+
+ Cree un usuario de IAM con permisos de administrador que pueda realizar cualquier acción en su cuenta de AWS, solo a través de CLI. Después de crear dicho usuario de IAM, usaremos su clave de acceso (credenciales) para configurar la AWS CLI localmente.
+
+ Deberá configurar los siguientes cuatro elementos en su máquina local antes de poder interactuar con cualquiera de los servicios de AWS:
+1. Clave de acceso: es una combinación de una ID de clave de acceso y una clave de acceso secreta. En conjunto, se les conoce como clave de acceso. Puede generar una clave de acceso desde el servicio AWS IAM y especificar el nivel de permisos (autorización) con la ayuda de los roles de IAM.
+2. Región de AWS predeterminada: especifica la región de AWS a la que desea enviar sus solicitudes de forma predeterminada.
+3. Formato de salida predeterminado: especifica cómo se formatean los resultados. Puede ser un json, yaml, texto o una tabla.
+4. Perfil: una colección de configuraciones se denomina perfil. El nombre del perfil predeterminado es el predeterminado; sin embargo, puede crear un perfil nuevo mediante el comando aws configure --profile new_name.
+
+**Estos son los pasos para configurar AWS CLI en su terminal:**
+`aws configurar`
+
+###
+
 ### Swaggger UI
 
  Se instalo el plugin **`serverless-auto-swagger`** para generar el swagger UI.
@@ -30,7 +46,7 @@ Dependiendo de su administrador de paquetes preferido, siga las instrucciones a 
 ### Utilizando NPM
 
 - Ejecutar `npm i` para instalar todas las dependencias
-- Ejecutar `serverless deploy` para desplegar a AWS
+- Ejecutar `serverless deploy --verbose` para desplegar a AWS
 
 ###
 

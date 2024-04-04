@@ -42,8 +42,10 @@ const serverlessConfiguration: AWS = {
   custom:{
     autoswagger:{
       title: 'API VEHICULOS',
-      description:'Esta API esta desarrollado con Serverless Framework en NodeJs y desplegado en AWS.',
+      version: "1.0.0",
+      description:'Esta API esta desarrollado con Serverless Framework en NodeJs y desplegado en AWS. Desarrollado por Orlando Netty Yarasca Lupuche',
       apiType: 'http',
+      basePath: '/dev',
       generateSwaggerOnDeploy: true,
       typefiles:['./src/model/response.vehiculo-es.ts','./src/model/response.vehiculo.ts','./src/model/Vehiculo.ts']
     },

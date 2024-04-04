@@ -3,8 +3,8 @@
   "swagger": "2.0",
   "info": {
     "title": "API VEHICULOS",
-    "version": "1",
-    "description": "Esta API esta desarrollado con Serverless Framework en NodeJs y desplegado en AWS"
+    "version": "1.0.0",
+    "description": "Esta API esta desarrollado con Serverless Framework en NodeJs y desplegado en AWS."
   },
   "paths": {
     "/vehiculo/": {
@@ -169,5 +169,6 @@
       "type": "object"
     }
   },
-  "securityDefinitions": {}
+  "securityDefinitions": {},
+  "basePath": "/dev"
 };
