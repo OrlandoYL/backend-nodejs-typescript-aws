@@ -3,10 +3,10 @@
 Este proyecto se generó utilizando la plantilla `aws-nodejs-typescript` del [Serverless Framework] (https://www.serverless.com/).
 Se crearon 3 endpoints son los siguientes:
 + METHOD GET - **https://{URL_AWS}/dev/vehiculo/**
-    Este primer endpoint retorna una lista de vehiculos que se guardo en DynamoDB de AWS.
+    > Este primer endpoint retorna una lista de vehiculos que se guardo en DynamoDB de AWS.
 
 + METHOD POST - **https://{URL_AWS}/dev/vehiculo/**
-    Este endpoint guarda un nuevo registro, con el siguiente modelo:
+    > Este endpoint guarda un nuevo registro, con el siguiente modelo:
     ~~~
         {
             "title": "string",
@@ -14,7 +14,7 @@ Se crearon 3 endpoints son los siguientes:
         }
     ~~~
 + METHOD GET - **https://{{URL_AWS}}/dev/vehiculoSwapi/**
-    Este endpoint lista los vehiculos con los atributos en español desde la integracion del api "https://swapi.py4e.com/api/vehicles/"
+    > Este endpoint lista los vehiculos con los atributos en español desde la integracion del api "https://swapi.py4e.com/api/vehicles/"
 
 ## Instrucciones de instalación/implementación
 
